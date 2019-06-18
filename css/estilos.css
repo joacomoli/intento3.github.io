@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro:400,600&display=swap');
 *{
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -17,6 +18,23 @@ strong{
   font-size: 45px;
   text-align: center;
   display: block;
+}
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
 }
 .topnav {
   overflow: hidden;
@@ -91,6 +109,33 @@ font-size: 30px;
 margin-left: 20px;
 margin-right: 20px;
 }
+a:hover{
+  padding-left: 20px;
+  padding-right: 20px;
+    text-decoration: none;
+    animation-name: cambiocolor;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+#redireccion_pelis{
+    padding-left: 20px;
+  padding-right: 20px;
+  animation:none;
+}
+strong:hover{
+  font-size: 45px;
+  color: gold;
+  animation-name: vibrar;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+.rrss{
+  height: 150px;
+  width: 150px;
+}
+
 
 #imgperfil{
 
@@ -119,12 +164,12 @@ margin-right: 20px;
   color:black;
 }
 .button:hover{
-  background-color: black;
+  animation-name: cambiocolor;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
-a:hover{
-  text-decoration: none;
-  color:white;
-}
+
 .container-fluid{
    background-color: blue;
   border-radius: 40px;
@@ -137,6 +182,12 @@ a:hover{
   border-radius: 50px;
   width: 100%;
   height: 200px;
+}
+.foto_peli:hover{
+    animation-name: vibrar;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
 }
 #foto_peli_grande{
     
@@ -165,7 +216,7 @@ a:hover{
   
 }
 #peli3{
-  background-color:#fabc58;
+  background-color:green;
   border-radius: 40px;
  
 
@@ -191,20 +242,136 @@ a:hover{
 .column img {
   margin-top: 8px;
   vertical-align: middle;
+  width: 50%;
+}
+.fotos_galeria:hover{
+    animation-name: vibrar;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+/* register */
+input[type=text], input[type=password], input[type=textarea], input[type=email] {
   width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=textarea]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
 }
 
 
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
 
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 90px;
+  font-size: 20px;
+
+}
+.registerbtn:hover{
+  animation-name: agrandartexto;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.registrate{
+    background-color: lightgrey;
+    border-radius: 10px; 
+
+  
+  margin-top: 20px;
+  position: auto;
+  display: block;
+}
+input{
+  border-radius:90px;
+}
+#form18{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 90px;
+}
 .footer{
   background-color: lightgrey;
   margin: none;
+
+}
+
+@keyframes agrandartexto {
+  from {font-size: 20px;}
+  to {font-size: 40px;}
+}
+@keyframes cambiocolor {
+  from {background-color: white;
+    color: black;
+  }
+  to {background-color: black;
+    color: white;
+  }
+}
+@keyframes vibrar {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
+  }
+  .registrate{
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
