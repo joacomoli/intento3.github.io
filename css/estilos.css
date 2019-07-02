@@ -193,9 +193,11 @@ strong:hover {
     border-radius: 40px;
 
 }
-.container_galeria{
-  background-color: lightgrey;
+
+.container_galeria {
+    background-color: lightgrey;
 }
+
 .foto_peli {
     margin-top: 10px;
     text-align: center;
@@ -273,10 +275,12 @@ strong:hover {
     vertical-align: middle;
     width: 50%;
 }
-.fotos_galeria{
-  border-radius: 20px;
-  width: 100%;
+
+.fotos_galeria {
+    border-radius: 20px;
+    width: 100%;
 }
+
 .fotos_galeria:hover {
     animation-name: vibrar;
     animation-duration: 2.5s;
