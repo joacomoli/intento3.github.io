@@ -157,6 +157,8 @@ strong:hover {
     border-radius: 160px;
     margin: auto;
     display: block;
+    width: 280px;
+    height: 400px;
 
 }
 
