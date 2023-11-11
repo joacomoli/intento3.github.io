@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9aeea4dd.css",
+    "main.js": "/static/js/main.0c92330d.js",
+    "static/media/yo.jpg": "/static/media/yo.423bcd50829a4cafaab5.jpg",
+    "static/media/bliss.png": "/static/media/bliss.1ae8c61e006103e2234d.png",
+    "static/media/vec.png": "/static/media/vec.5f1c799c1dbbaf0d530a.png",
+    "static/media/unidad.png": "/static/media/unidad.c2c8d8d5ed127e7deeef.png",
+    "static/media/adavel.png": "/static/media/adavel.9de6deb2bc0cf7595432.png",
+    "static/media/arteytierra.png": "/static/media/arteytierra.f83bb2ad66da1b841538.png",
+    "static/media/vecig.png": "/static/media/vecig.57a08d7d5d11ef732844.png",
+    "static/media/aknandaig.png": "/static/media/aknandaig.c60f37a28120792b9b4f.png",
+    "static/media/rashed.png": "/static/media/rashed.f8e9d6f21ea3aa8799f4.png",
+    "static/media/giobella.png": "/static/media/giobella.62e965728bd6ff4571bf.png",
+    "static/media/tma.png": "/static/media/tma.0c2f5cea9f6e7e9b15af.png",
+    "static/media/adelplanig.png": "/static/media/adelplanig.f0cdeb5b01ccdb2771fd.png",
+    "static/media/lul.png": "/static/media/lul.819341caf79349bd08e2.png",
+    "index.html": "/index.html",
+    "main.9aeea4dd.css.map": "/static/css/main.9aeea4dd.css.map",
+    "main.0c92330d.js.map": "/static/js/main.0c92330d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9aeea4dd.css",
+    "static/js/main.0c92330d.js"
+  ]
+}
